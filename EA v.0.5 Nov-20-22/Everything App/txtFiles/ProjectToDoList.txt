@@ -1,0 +1,12 @@
+Put functions into respected selection if statements (switches)
+
+make output more readable 
+
+save file as version; then clean up code make (clean code version); then work on next version of app. 
+- V.1.cc
+- V.1
+
+put more code into txt files 
+
+convert integers to floats then back into strings when summed 
+

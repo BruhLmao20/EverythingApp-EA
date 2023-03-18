@@ -1,0 +1,15 @@
+===============================================    
+
+static int Fib(int n)
+    {
+        if(n <= 1)
+            return n; 
+        return Fib(n -1) + Fib(n - 2);
+    }
+
+Notes: 
+- 0+1=1, 1+1=2, 1+2=3, 2+3=5, ect...
+- can display fib sequence as a tree
+
+learn more: https://www.geeksforgeeks.org/program-for-nth-fibonacci-number/
+===============================================
