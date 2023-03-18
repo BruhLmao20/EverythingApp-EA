@@ -1,0 +1,9 @@
+everythingApp (1) Version 0.5 ==== 11-20-22 : 7:07am
+- Original Production 
+
+everythingApp (2) Version 0.5.1 ==== 
+- Cleaned up the code (cleared all commented out, out of place code) 
+- (just menuEA running in the main function) 
+
+- indented menu 
+- 

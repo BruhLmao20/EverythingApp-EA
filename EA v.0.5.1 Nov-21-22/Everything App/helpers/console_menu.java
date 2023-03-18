@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 import functions.fibEA; 
 
+// Version 0.5.1. ==== 11-2-22 : 1:40am
+
 // https://www.youtube.com/watch?v=pk2tf1EBqgY
 
 public class console_menu {
@@ -11,14 +13,21 @@ public class console_menu {
     Scanner scnr = new Scanner(System.in);
 
     public boolean is_running;
+
+    // menu options 
     public String[] menu_items; 
+    public String[] fibMenu_items; 
+    // public String[] fibMenu_items;
+    // public String[] fibMenu_items;
+
     protected String next; 
     //protected menu_manager mm; 
 
-    public console_menu(){
-        is_running = true;
-        menu_items = new String[]{"palEA", "fibEA",}; 
-    }
+    // // MAYBE DONT NEED (may be menuEA function) 
+    // public console_menu(){
+    //     is_running = true;
+    //     menu_items = new String[]{"palEA", "fibEA",}; 
+    // }
 
     public void run(){
         while(is_running){
@@ -35,12 +44,18 @@ public class console_menu {
     public void menu_show(){
         int i = 1; 
 
+        S.o(""); 
         S.o("Enter Corresponding Entry To Execute Operation: "); 
+        S.o(""); 
         for(String item: menu_items){
+            System.out.print('\t');//tabs spaces the menu (needs to be print "NO LN" as tab is same line)
             S.o(i + ") "+item); 
             i++; 
         }
-        S.o("exit)  to exit program: "); 
+        System.out.print('\t');//tabs spaces the exit in menu (needs to be print "NO LN" as tab is same line)
+        S.o("exit)  \tTo Exit the Program: ");
+        S.o(""); 
+        System.out.print("Enter number for desired program: ");// NOT "S.o" so that input is on same line as "...Exit the Program: "
     }
 
     public void menu_user_input(){

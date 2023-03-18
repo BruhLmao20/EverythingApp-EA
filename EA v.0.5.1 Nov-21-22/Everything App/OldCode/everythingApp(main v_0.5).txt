@@ -1,9 +1,9 @@
 import java.io.IOException;
-import java.util.Scanner;
+// import java.util.Scanner;
 
-import functions.fibEA;
-import helpers.console_menu; 
-import helpers.*; 
+// import functions.fibEA;
+// import helpers.console_menu; 
+// import helpers.*; 
 
 public class everythingApp {
  
@@ -14,11 +14,11 @@ public class everythingApp {
 
         // ==================================================== [ Initializing Functions ] ============================================================== 
 
-        Scanner scnr = new Scanner(System.in);
+        // Scanner scnr = new Scanner(System.in);
  
-        fibEA fib = new fibEA(); 
-        fibEA rfib = new fibEA(); 
-        fibEA rFibFile = new fibEA(); 
+        // fibEA fib = new fibEA(); 
+        // fibEA rfib = new fibEA(); 
+        // fibEA rFibFile = new fibEA(); 
 
         // console_menu menu = new console_menu(); 
         // menu.run();
