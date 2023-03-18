@@ -1,0 +1,12 @@
+some functions have formulas to derive answers 
+
+these are better than brute forcing the code to do all the work
+
+use float varriables for large numbers then conver it back to a larger int 
+
+formulas >>> brute force 
+Examples
+- sum product
+- probability
+- transpose (2D array)
+- fourier transformer (examples and learn more about them)

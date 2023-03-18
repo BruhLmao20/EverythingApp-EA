@@ -1,0 +1,16 @@
+
+
+# COLORS : https://htmlcolorcodes.components
+
+HEX or 3 RGB values
+
+HEX
+#70b1f5
+RGB
+112, 177, 245
+
+
+HEX
+#193d62
+RGB
+25, 61, 98 

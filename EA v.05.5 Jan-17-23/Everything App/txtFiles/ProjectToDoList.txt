@@ -13,8 +13,8 @@ convert integers to floats then back into strings when summed
   
   =======================================
 
-  if number isnt a progarm; have in try catch then crash the program and say that wasnt a valid input try again 
+  if number isn't a program; have in try catch then crash the program and say that wasn't a valid input try again 
 
-  secondary menu (FIB MENU) isnt displaying after fib program runs and gives output 
+  secondary menu (FIB MENU) isn't displaying after fib program runs and gives output 
 
   

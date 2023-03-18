@@ -1,9 +1,7 @@
 package helpers; 
 
+import java.io.IOException;
 import java.util.Scanner;
-
-import functions.fibEA; 
-
 // Version 0.5.1. ==== 11-2-22 : 1:40am
 
 // https://www.youtube.com/watch?v=pk2tf1EBqgY
@@ -16,26 +14,17 @@ public class console_menu {
 
     // menu options 
     public String[] menu_items; 
-    public String[] fibMenu_items; 
-    // public String[] fibMenu_items;
-    // public String[] fibMenu_items;
+    public String[] fibMenu_items; // NOTE: DONT NEED SPECIAL AS MENU ITEMS WILL BE FILLED IN NEW 
 
     protected String next; 
-    //protected menu_manager mm; 
 
-    // // MAYBE DONT NEED (may be menuEA function) 
-    // public console_menu(){
-    //     is_running = true;
-    //     menu_items = new String[]{"palEA", "fibEA",}; 
-    // }
-
-    public void run(){
+    public void run() throws IOException{
         while(is_running){
             update(); 
         }
     }
 
-    public void update(){
+    public void update() throws IOException{
         menu_show(); 
         menu_user_input(); 
     }
@@ -44,6 +33,7 @@ public class console_menu {
     public void menu_show(){
         int i = 1; 
 
+        S.o("====================================================================================");
         S.o(""); 
         S.o("Enter Corresponding Entry To Execute Operation: "); 
         S.o(""); 
@@ -56,9 +46,10 @@ public class console_menu {
         S.o("exit)  \tTo Exit the Program: ");
         S.o(""); 
         System.out.print("Enter number for desired program: ");// NOT "S.o" so that input is on same line as "...Exit the Program: "
+        //S.o("====================================================================================");
     }
 
-    public void menu_user_input(){
+    public void menu_user_input() throws IOException{
 
         // gets user input 
         Scanner user_input = new Scanner(System.in); 
@@ -66,7 +57,7 @@ public class console_menu {
 
         //exit program if user writes exit 
         if(next.equals("exit")){
-            S.o("program ended");
+            S.o("Program Ended");
             endp(); 
         }
     }
