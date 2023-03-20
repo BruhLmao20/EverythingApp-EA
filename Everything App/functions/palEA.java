@@ -47,7 +47,7 @@ public class palEA {
 
         // racecar
         String r = "ra!@#$%^&^&c=e=ca/*r"; 
-        ExcludeSpacesNSymbols(r); 
+        ExcludeSpacesNSymbols(r);  
         
     }
 

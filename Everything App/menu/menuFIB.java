@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import functions.fibEA;
-import helpers.S;
+import helpers.*;
 import helpers.program_option_menu;
 
 
@@ -35,6 +35,7 @@ public class menuFIB extends program_option_menu{
         
             System.out.println("pick a number: "); 
             startNum = scnr.nextInt();
+            screen.clear();
             S.o(""); 
             S.o("==============================================="); 
             System.out.println("The Fibonacci of (" + startNum + ") is " + fibEA.recFib(startNum)); // imported fibEA from functions 

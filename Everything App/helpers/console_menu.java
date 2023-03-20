@@ -51,9 +51,10 @@ public class console_menu {
 
     public void menu_user_input() throws IOException{
 
-        // gets user input 
+        // gets user input   
         Scanner user_input = new Scanner(System.in); 
         next  = user_input.next(); 
+        screen.clear();
 
         //exit program if user writes exit 
         if(next.equals("exit")){
