@@ -77,16 +77,20 @@ public class menuMatrix extends program_option_menu{
 
             S.o(""); 
             S.o("============================================================================================================================================="); 
-            matrix.matrixVerse();
+            try{
+                matrix.matrixVerse();
+            } catch (InterruptedException e){
+                Thread.currentThread().interrupt();
+            }
             S.o("=============================================================================================================================================");
 
         // if(next.equals("3")){
-        //     System.out.println(); 
+        //     System.out.println();
         //     System.out.println("Here is the code btw :)");
-        //     System.out.println(); 
+        //     System.out.println();
         //     System.out.println(menuMatrix.rFibCode()); //located in the functions package
         // }
 
+        }
     }
-
 }
