@@ -47,10 +47,10 @@ public class menuFIB extends program_option_menu{
             menuFIB.endp();
         }       
 
-        if(next.equals("1")){
-            System.out.println(); 
+        if(next.equals("2")){
+            System.out.println();
             System.out.println("Here is the code btw :)");
-            System.out.println(); 
+            System.out.println();
             System.out.println(fibEA.rFibCode());//located in the functions package
         }
 

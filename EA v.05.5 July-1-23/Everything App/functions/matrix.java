@@ -211,18 +211,15 @@ public class matrix {
 
     public static void findMaxPerCol(int[][] array){
 
-        int cols = array[0].length; 
-        //int[] results = new int[cols]; 
-
-        //for(int i = 0; i < cols; i++) 
-        // OLD CODE: for(int i = 0; i < array[i].length; i++)
+        int cols = array[0].length;
         for(int i = 0; i < cols; i++){
-            int max = array[0][i]; 
-            for(int j = 1; j < array[i].length; j++)
-                if(array[j][i] > max)
-                    max = array[j][i]; 
-
-            S.o("col "+(i+1)+": "+max); 
+            int max = array[0][i];
+            for(int j = 1; j < array.length; j++){
+                if(array[j][i] > max){
+                    max = array[j][i];
+                }
+            }
+            S.o("col " + (i + 1) + ": " + max);
         }
     }
 
@@ -230,15 +227,15 @@ public class matrix {
     // 5. transpose() it takes a 3d array and it will return a 2d transposed from original. a transpose matrix is the translation of rows per column and vise versa 
         
         public static int[][] transpose(int[][] array){
-            
-            int rows = array.length; 
-            int cols = array[rows].length; 
 
-            int [][] newMatrix = new int[rows][cols]; 
+            int rows = array.length;
+            int cols = array[0].length;
+
+            int [][] newMatrix = new int[cols][rows];
 
             for(int i = 0; i < rows; i++){
                 for(int j = 0; j < cols; j++){
-                    newMatrix[j][i] = array[i][j]; 
+                    newMatrix[j][i] = array[i][j];
                 }
             }
 

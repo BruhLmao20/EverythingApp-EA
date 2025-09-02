@@ -30,7 +30,7 @@ public class fibEA {
     }
 
     public static String rFibCode() throws IOException{
-        return new String(Files.readAllBytes(Paths.get("C:/Users/PC_SS/Desktop/Everything App/txtFiles/recFib.txt")));
+        return Files.readString(Paths.get("txtFiles", "recFib.txt"));
     }
 }
 
